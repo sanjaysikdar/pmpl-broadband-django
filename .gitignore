@@ -1,0 +1,11 @@
+zenv/
+*/migrations/
+*/staticfiles/
+__pycache__/
+.vscode/
+media/
+logs/
+Notes
+Deploy
+.env
+db.sqlite3
