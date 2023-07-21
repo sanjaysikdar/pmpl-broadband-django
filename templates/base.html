@@ -1,11 +1,148 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{% block title %} {% endblock title %}</title>
+        <title>{% block title %} {% endblock title %}PMPL - Broadband & Internet</title>
+        <meta name="description" content="" />
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon"  href="{% static 'assets/img/logo/favicon.png' %}" />
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome-pro.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/spacing.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/custom-animation.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
     </head>
     <body>
-        {% block content %} {% endblock content %}
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- pre loader area start -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_four"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_one"></div>
+                </div>
+            </div>
+        </div>
+        <!-- pre loader area end -->
+        <!-- back to top start -->
+        <div class="back-to-top-wrapper">
+            <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            </button>
+        </div>
+        <!-- back to top end -->
+        <!-- tp-offcanvus-area-start -->
+        <div class="tpoffcanvas-area">
+            <div class="tpoffcanvas">
+            <div class="tpoffcanvas__close-btn">
+                <button class="close-btn"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="tpoffcanvas__logo">
+                <a href="index.html">
+                    <img src="assets/img/logo/footer-logo.png" alt="">
+                </a>
+            </div>
+            <div class="tpoffcanvas__title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt eaque a cumque, porro maxime
+                    autem sed.</p>
+            </div>
+            <div class="tp-main-menu-mobile d-xl-none"></div>
+            <div class="tpoffcanvas__contact-info">
+                <div class="tpoffcanvas__contact-title">
+                    <h5>Contact us</h5>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fa-light fa-location-dot"></i>
+                        <a href="https://www.google.com/maps/@23.8223586,90.3661283,15z" target="_blank">Melbone st,
+                        Australia, Ny 12099</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:solaredge@gmail.com">themepure@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fal fa-phone-alt"></i>
+                        <a href="tel:+48555223224">+48 555 223 224</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tpoffcanvas__input">
+                <div class="tpoffcanvas__input-title">
+                    <h4>Get UPdate</h4>
+                </div>
+                <form action="#">
+                    <div class="p-relative">
+                        <input type="text" placeholder="Enter mail">
+                        <button>
+                        <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="tpoffcanvas__social">
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+        <!-- tp-offcanvus-area-end -->
+        
+        <!-- Header -->
+        {% include 'layout/header.html' %}
+
+        <!-- Main -->
+        <main>
+            <!-- Contents -->
+            {% block content %} {% endblock content %}
+        </main>
+
+        <!-- Footer -->
+        {% include 'layout/footer.html' %}
+        
+
+        <!-- JS here -->
+        <script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
+        <script src="{% static 'assets/js/vendor/waypoints.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap-bundle.js' %}"></script>
+        <script src="{% static 'assets/js/meanmenu.js' %}"></script>
+        <script src="{% static 'assets/js/gsap.min.js' %}"></script>
+        <script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+        <script src="{% static 'assets/js/split-text.min.js' %}"></script>
+        <script src="{% static 'assets/js/swiper-bundle.js' %}"></script>
+        <script src="{% static 'assets/js/slick.js' %}"></script>
+        <script src="{% static 'assets/js/range-slider.js' %}"></script>
+        <script src="{% static 'assets/js/magnific-popup.js' %}"></script>
+        <script src="{% static 'assets/js/nice-select.js' %}"></script>
+        <script src="{% static 'assets/js/purecounter.js' %}"></script>
+        <script src="{% static 'assets/js/countdown.js' %}"></script>
+        <script src="{% static 'assets/js/jequery-knob.js' %}"></script>
+        <script src="{% static 'assets/js/jequery-appear.js' %}"></script>
+        <script src="{% static 'assets/js/wow.js' %}"></script>
+        <script src="{% static 'assets/js/isotope-pkgd.js' %}"></script>
+        <script src="{% static 'assets/js/imagesloaded-pkgd.js' %}"></script>
+        <script src="{% static 'assets/js/ajax-form.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
     </body>
 </html>
