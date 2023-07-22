@@ -1,0 +1,6 @@
+from .naming import PUBLIC_DOMAIN
+
+# PAGES CONFIGURATION
+ACCOUNT_VERIFICATION_SUCCESS_URL = f'{PUBLIC_DOMAIN}/account/verification/email'
+RESET_PASSWORD_PAGE_URL = f'{PUBLIC_DOMAIN}/auth/reset-password'
+SITE_URL = f'{PUBLIC_DOMAIN}' 
